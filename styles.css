@@ -1,0 +1,440 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #444444;
+	line-height: 1.6;
+}
+
+header {
+	background-color: #FFF8E1;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.875rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+li {
+	font-size: 1.3rem;
+}
+
+#lnk100 {
+    color: #ffbb12;
+	 font-size: 1.3rem;
+}
+.submit {
+  background-color: #ffbb11;
+  color: #000000;                 /* Text color */
+  border: none;                 /* No border */
+  padding: 12px 24px;           /* Size */
+  font-size: 16px;              /* Text size */
+  font-family: sans-serif;      /* Clean font */
+  border-radius: 50px;           /* Rounded corners */
+  cursor: pointer;              /* Pointer on hover */
+  transition: all 0.3s;
+}
+
+.submit:hover {
+  background-color: #bc8a0d;
+  transform: translateY(-3px);
+}
+
+.submit:active {
+  background-color: #9c6e0a;
+  transform: scale(0.97);
+}
+
+.hero {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: auto; 
+    background-color: #FFF8E1;
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%; /* Cambiado a 100% para que ocupe todo el ancho */
+}
+
+.hero-container {
+    max-width: 1000px; /* Mismo ancho máximo que .container */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-hero {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_hero {
+    flex: 0 0 70%;
+    text-align: left;
+	 padding: 0 20px; /* Añadir padding lateral */
+    box-sizing: border-box; /* Incluir padding en el cálculo del ancho */
+}
+
+.container-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Luki-Casa.jpeg');
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.container-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.contacto{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 30px;
+	margin: 40px 0;
+}
+.contactos{
+	display: inline-block;
+}
+
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 30px;
+	margin: 40px 0;
+}
+
+.feature {
+	flex: 1;
+	min-width: 250px;
+	/*background: #fff;*/
+	padding: 25px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: rgba(255, 255, 225, 0.9);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}
+
+.feature-icon {
+	font-size: 3rem;
+	margin-bottom: 15px;
+}
+
+.plans {
+    position: relative;
+	/*background-color: rgba(255, 248, 225, 0.9);*/
+	width: 100%;/*padding: 50px 20px;*/
+	text-align: center;
+    overflow: hidden;
+	 
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.plans::before {
+	 content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Casa.jpeg');
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.plans::after{
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+}
+
+.plan-card {
+	background: #fff;
+	border-radius: 10px;
+	padding: 25px;
+	margin: 20px;
+	background-color: rgba(255, 255, 225, 0.9);
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
+	display: inline-block;
+	width: 250px;
+	vertical-align: top;
+}
+
+.price {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #ffbb11;
+	color: #000000;
+	padding: 12px 30px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 20px;
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	background-color: #b3b3b3;
+	transform: translateY(-3px);
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #25D366, #23bd5c);
+}
+
+.titulo{
+	background-color: rgba(255, 255, 225, 0.8);
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.whatsapp-btn {
+	background-color: #25D366;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 15px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+	z-index: 100;
+}
+
+footer {
+	background-color: #ddd;
+	text-align: center;
+	padding: 7px;
+	margin-top: 50px;
+}
+
+img {
+	max-width: 95%;
+	height: auto;
+}
+
+/* Responsive para móviles */
+@media (max-width: 1090px) {
+    .hero {
+        width: 90% !important; /* Reducir el ancho para pantallas medianas */
+        margin: 0 auto; /* Centrar el contenedor */
+        padding: 40px 15px; /* Ajustar padding */
+    }
+    
+    .text_hero h1 {
+        font-size: 2.2rem; /* Reducir ligeramente el tamaño de fuente */
+    }
+    
+    .text_hero h2 {
+        font-size: 1.2rem; /* Reducir ligeramente el tamaño de fuente */
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        width: 95% !important; /* Aumentar el ancho usable */
+        padding: 30px 10px;
+    }
+    
+    .text_hero h1 {
+        font-size: 2rem;
+    }
+    
+    .text_hero h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        width: 100% !important; /* Usar todo el ancho disponible */
+        padding: 30px 15px;
+        box-sizing: border-box;
+    }
+    
+    .hero-container {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        gap: 25px;
+    }
+    
+    .logo-hero, .text_hero {
+        flex: 0 0 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text_hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .text_hero h2 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 600px) {
+	{
+        box-sizing: border-box;
+    }
+    
+    /* Mejorar espaciado general */
+    .container {
+        padding: 20px 15px;
+    }
+	 
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+	 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+        width: 100%; /* Asegurar que ocupe todo el ancho */
+        margin: 0; /* Eliminar cualquier margen */
+        box-sizing: border-box; /* Incluir padding en el cálculo del ancho */
+    }
+    
+    .logo-hero, .text_hero {
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 0 10px; /* Pequeño padding lateral para consistencia */
+        box-sizing: border-box;
+    }
+    
+    .logo-hero img {
+        max-width: 80%; /* Reducir ligeramente el logo en móvil */
+        margin: 0 auto; /* Centrar la imagen */
+        display: block;
+    }
+	 
+	 .hero-container {
+        flex-direction: column;
+        gap: 30px; /* Espaciado entre elementos apilados */
+    }
+	 
+    .main-text {
+        font-size: 2.5rem;
+    }
+    
+    .subtext {
+        font-size: 1rem;
+    }
+    
+    .container-wrapper::before {
+        background-size: 150% auto;
+        background-position: center center;
+    }
+    
+    .plans::before {
+        background-size: 150% auto;
+        background-position: center center;
+    }
+	 
+	 .text_hero h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .text_hero h2 {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+	 
+	 #ContactUs100 {
+        width: 100% !important;
+        max-width: 100%;
+    }
+    
+    #ContactUs100 table {
+        width: 100% !important;
+        max-width: 100%;
+    }
+    
+    #ContactUs100 input[type="text"],
+    #ContactUs100 textarea {
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    #ContactUs100 td {
+        display: block;
+        width: 100% !important;
+        padding: 5px 0;
+    }
+    
+    #ContactUs100 td:first-child {
+        text-align: left;
+        padding-top: 15px;
+    }
+    
+    .contacto {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contactos {
+        width: 100%;
+    }
+}
